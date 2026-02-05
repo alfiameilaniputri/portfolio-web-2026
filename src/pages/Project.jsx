@@ -31,7 +31,7 @@ const featuredProjects = [
     ],
     tech: ["HTML", "CSS", "JavaScript", "REST API", "Internal DB"],
     badge: "FEATURED • INTERNAL",
-    github: https://github.com/DMR-Project,
+    github: "https://github.com/DMR-Project",
     demo: null,
   },
   {
