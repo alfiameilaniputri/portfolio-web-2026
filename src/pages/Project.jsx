@@ -29,7 +29,7 @@ const featuredProjects = [
       "/List Request New.png",
       "/Pop up confirmed by head dept.png",
     ],
-    tech: ["HTML", "CSS", "JavaScript", "REST API", "Internal DB"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "REST API"],
     badge: "FEATURED • INTERNAL",
     github: "https://github.com/DMR-Project",
     demo: null,
@@ -69,58 +69,8 @@ const featuredProjects = [
    ALL PROJECTS
 ========================= */
 const projects = [
-  {
+    {
     id: 1,
-    title: "VocFilm — Movie Discovery Platform",
-    description:
-      "Movie discovery and review platform with API-driven search and filtering.",
-    image: ["/Web Movie.jpg"],
-    tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
-    github: "https://github.com/username/vocfilm",
-    demo: null,
-  },
-  {
-    id: 2,
-    title: "Pokedex — API-Based Web App",
-    description:
-      "Interactive Pokedex app consuming public APIs with dynamic UI.",
-    image: ["/Web Pokedex.jpg"],
-    tech: ["HTML", "CSS", "JavaScript", "React.js"],
-    github: "https://github.com/username/pokedex",
-    demo: "https://pokedex.vercel.app",
-  },
-  {
-    id: 3,
-    title: "Bookshelf App — Local Storage System",
-    description:
-      "Bookshelf app using localStorage for persistent data handling.",
-    image: ["/Web Book Shelf 1.png", "/Web Book Shelf 2.png"],
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/username/bookshelf",
-    demo: null,
-  },
-  {
-    id: 4,
-    title: "Pawon Alzhim’s Web — Responsive Layout",
-    description:
-      "Responsive website layout using semantic HTML and Flexbox.",
-    image: ["/Web Al Zhim 1.png", "/Web Al Zhim 2.png"],
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: null,
-    demo: "https://pawon-alzhim.vercel.app",
-  },
-  {
-    id: 5,
-    title: "Notes App — REST API Integration",
-    description:
-      "Notes application consuming RESTful APIs with structured data rendering.",
-    image: ["/Web Notes App.png"],
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/username/notes",
-    demo: null,
-  },
-  {
-    id: 6,
     title: "Mental Health Web Platform — Team Project",
     description:
       "Frontend interfaces for a mental health platform integrated with ML analysis.",
@@ -134,7 +84,57 @@ const projects = [
       "/Halaman Evaluasi Diri 6.jpg",
     ],
     tech: ["React.js", "REST API", "Tailwind CSS"],
-    github: null,
+    github: "https://github.com/Sehati-by-DBS-Coding-Camp",
+    demo: "https://sehati-drab.vercel.app",
+  },
+  {
+    id: 2,
+    title: "VocFilm — Movie Discovery Platform",
+    description:
+      "Movie discovery and review platform with static data-based search and filtering, built using HTML, CSS, and JavaScript.",
+    image: ["/Web Movie.jpg"],
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/alfiameilaniputri/tugasweek4vocasia-vocfilm",
+    demo: null,
+  },
+  {
+    id: 3,
+    title: "Pokedex — API-Based Web App",
+    description:
+      "This project is a static frontend web application developed using HTML and JavaScript. The application displays Pokémon data using locally managed assets and client-side logic without a backend API.",
+    image: ["/Web Pokedex.jpg"],
+    tech: ["HTML", "CSS", "JavaScript", "React.js"],
+    github: "https://github.com/alfiameilaniputri/tugas-week-6-mern-introduction-alfiameilaniputri",
+    demo: null,
+  },
+  {
+    id: 4,
+    title: "Bookshelf App — Local Storage System",
+    description:
+      "Bookshelf app using localStorage for persistent data handling.",
+    image: ["/Web Book Shelf 1.png", "/Web Book Shelf 2.png"],
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/username/bookshelf",
+    demo: null,
+  },
+  // {
+  //   id: 5,
+  //   title: "Pawon Alzhim’s Web — Responsive Layout",
+  //   description:
+  //     "Responsive website layout using semantic HTML and Flexbox.",
+  //   image: ["/Web Al Zhim 1.png", "/Web Al Zhim 2.png"],
+  //   tech: ["HTML", "CSS", "JavaScript"],
+  //   github: null,
+  //   demo: "https://pawon-alzhim.vercel.app",
+  // },
+  {
+    id: 5,
+    title: "Notes App — REST API Integration",
+    description:
+      "Notes application consuming RESTful APIs with structured data rendering.",
+    image: ["/Web Notes App.png"],
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/username/notes",
     demo: null,
   },
   {
