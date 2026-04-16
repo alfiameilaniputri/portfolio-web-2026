@@ -14,6 +14,51 @@ import Footer from "../components/Footer";
 ========================= */
 const featuredProjects = [
   {
+    id: "region-filter",
+    title: "Region Filter Web — Indonesia Area Selection",
+    type: "Web Application",
+    role: "Frontend Developer",
+    description:
+      "Developed a dynamic region filtering interface that enables users to select Province, City/Regency, and District through dependent dropdowns. Implemented structured data fetching and responsive UI components, along with breadcrumb navigation to reflect user selections in real time.",
+    impact:
+      "Delivered a structured and intuitive filtering experience, improving usability and ensuring consistent data selection across hierarchical regions.",
+    image: ["/Web Region Filter.jpeg"],
+    tech: ["React.js", "React Router", "JavaScript", "CSS"],
+    badge: "FEATURED • FRONTEND",
+    github:
+      "hhttps://github.com/alfiameilaniputri/indonesia-region-filter-alfia",
+    demo: "https://indonesia-region-filter-alfia.vercel.app",
+  },
+  {
+    id: "ecommerce-alzhim",
+    title: "E-Commerce Web App — Warung Alzhim",
+    type: "Full Stack Web Application",
+    role: "Full Stack Developer",
+    description:
+      "Developed a web-based e-commerce system to support digital transformation for a local retail business. The application enables product management, transaction processing, inventory tracking, and online ordering through an integrated system. Built using the MERN stack with a structured development approach based on the prototype method.",
+    impact:
+      "Helped streamline manual business operations into a digital system, improving transaction management, stock monitoring, and overall operational efficiency.",
+    image: [
+      "/Web Warung Alzhim.jpeg",
+      "/Daftar Produk Kebersihan.png",
+      "/Daftar Produk Lainnya.png",
+      "/Input Transaksi Offline.png",
+      "/Kelola Pesanan Online.png",
+      "/Form Ubah Produk.png",
+    ],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+      "Midtrans Payment Gateway",
+    ],
+    badge: "FEATURED • FULLSTACK",
+    github: "https://github.com/username/ecommerce-alzhim", // ganti punyamu
+    demo: "https://alzhim-store.vercel.app", // kalau ada
+  },
+  {
     id: "sharp",
     title: "Internal Web System — PT Sharp Electronics Indonesia",
     type: "Corporate Case Study (Confidential)",
@@ -29,7 +74,14 @@ const featuredProjects = [
       "/List Request New.png",
       "/Pop up confirmed by head dept.png",
     ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "REST API"],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "REST API",
+    ],
     badge: "FEATURED • INTERNAL",
     github: "https://github.com/DMR-Project",
     demo: null,
@@ -41,10 +93,16 @@ const featuredProjects = [
     role: "Front-End / Full Stack Developer",
     description:
       "Built a MERN-based e-commerce platform for buying and selling secondhand clothing with responsive UI and role-based access.",
-    impact:
-      "Improved shopping experience and structured product management.",
+    impact: "Improved shopping experience and structured product management.",
     image: ["/Web Reloved.jpg"],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "JWT",
+    ],
     badge: "FEATURED",
     github: "https://github.com/alfiameilaniputri/reloved",
     demo: "https://reloved.vercel.app",
@@ -69,7 +127,7 @@ const featuredProjects = [
    ALL PROJECTS
 ========================= */
 const projects = [
-    {
+  {
     id: 1,
     title: "Mental Health Web Platform — Team Project",
     description:
@@ -104,7 +162,8 @@ const projects = [
       "This project is a static frontend web application developed using HTML and JavaScript. The application displays Pokémon data using locally managed assets and client-side logic without a backend API.",
     image: ["/Web Pokedex.jpg"],
     tech: ["HTML", "CSS", "JavaScript", "React.js"],
-    github: "https://github.com/alfiameilaniputri/tugas-week-6-mern-introduction-alfiameilaniputri",
+    github:
+      "https://github.com/alfiameilaniputri/tugas-week-6-mern-introduction-alfiameilaniputri",
     demo: null,
   },
   {
@@ -140,8 +199,7 @@ const projects = [
   {
     id: 7,
     title: "Web Story App — PWA",
-    description:
-      "Progressive Web App with offline support and IndexedDB.",
+    description: "Progressive Web App with offline support and IndexedDB.",
     image: ["/Web Story 1.png", "/Web Story 2.png", "/Web Story 3.png"],
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/username/web-story",
@@ -164,15 +222,12 @@ export default function Projects() {
   };
 
   const handleNext = () =>
-    setCurrentImgIndex(
-      (prev) => (prev + 1) % modalProject.image.length
-    );
+    setCurrentImgIndex((prev) => (prev + 1) % modalProject.image.length);
 
   const handlePrev = () =>
     setCurrentImgIndex(
       (prev) =>
-        (prev - 1 + modalProject.image.length) %
-        modalProject.image.length
+        (prev - 1 + modalProject.image.length) % modalProject.image.length,
     );
 
   /* =========================
@@ -194,14 +249,18 @@ export default function Projects() {
           className="w-full h-full object-cover group-hover:scale-105 transition"
         />
 
-        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
-                        flex items-center justify-center text-white text-xs font-semibold">
+        <div
+          className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100
+                        flex items-center justify-center text-white text-xs font-semibold"
+        >
           View Details
         </div>
 
         {featured && (
-          <span className="absolute top-3 left-3 bg-blue-900 text-white
-                           text-[10px] px-3 py-1 rounded-full">
+          <span
+            className="absolute top-3 left-3 bg-blue-900 text-white
+                           text-[10px] px-3 py-1 rounded-full"
+          >
             {project.badge}
           </span>
         )}
@@ -330,9 +389,7 @@ export default function Projects() {
                 )}
               </div>
 
-              <h3 className="font-semibold mb-2">
-                {modalProject.title}
-              </h3>
+              <h3 className="font-semibold mb-2">{modalProject.title}</h3>
 
               <p className="text-sm text-slate-700 mb-3">
                 {modalProject.description}
