@@ -192,7 +192,7 @@ export default function Resume() {
         <div className="flex flex-col sm:flex-row sm:justify-between mb-16 gap-6 mt-10">
           <h1 className="text-3xl font-semibold">Resume</h1>
           <a
-            href="/CV Alfia Meilani Putri_Admin.pdf"
+            href="/CV Alfia Meilani Putri_Frontend Developer (1).pdf"
             download
             className="px-6 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 transition"
           >
