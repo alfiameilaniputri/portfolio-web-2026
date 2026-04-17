@@ -46,7 +46,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="block px-5 py-2.5 px-0 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
+                className="block px-5 py-2.5 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
               />
               <label
                 htmlFor="name"
@@ -64,7 +64,7 @@ export default function Contact() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="block px-5 py-2.5 px-0 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
+                className="block px-5 py-2.5 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
               />
               <label
                 htmlFor="email"
@@ -82,7 +82,7 @@ export default function Contact() {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="block px-5 py-6 px-0 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none resize-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
+                className="block px-5 py-6 w-full text-gray-900 bg-white border-0 border-b-2 border-gray-300 appearance-none resize-none focus:outline-none focus:ring-0 focus:border-purple-500 peer rounded-md"
               ></textarea>
               <label
                 htmlFor="message"
